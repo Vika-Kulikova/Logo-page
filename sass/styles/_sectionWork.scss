@@ -1,0 +1,100 @@
+@import "compass/support";
+
+.container-works {
+  max-width: 25%;
+  flex-basis: 25%;
+  //height: 350px;
+  overflow: hidden;
+  border-top: 1px solid $backgroundSectionLight;
+  border-left: 1px solid $backgroundSectionLight;
+  position: relative;
+  &:nth-child(4n+4) {
+    border-right: 1px solid $backgroundSectionLight;
+  }
+  &:hover {
+    .work-description {
+      display: flex;
+      text-decoration: none;
+    }
+    img {
+      @include scale(1.1, 1.1);
+    }
+  }
+  @media (max-width: 1024px) {
+    max-width: 50%;
+    flex-basis: 50%;
+    &:nth-child(2n+2) {
+      border-right: 1px solid $backgroundSectionLight;
+    }
+  }
+  @media (max-width: 550px) {
+    max-width: 100%;
+    flex-basis: 100%;
+    border-right: 1px solid $backgroundSectionLight;
+  }
+}
+
+//.container-works-hover {
+//  .work-description {
+//    display: flex;
+//  }
+//}
+
+.work-description {
+  display: none;
+  background-color: $workItemHover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  @include transition-duration(0.5s);
+  .description-text {
+    //display: block;
+    color: $textColorLight;
+    &-title {
+      display: block;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: $baseFontSize;
+      @include animation-name (slideInDown);
+      @include animation-duration (0.8s);
+      @include animation-fill-mode (both);
+
+    }
+    &-content {
+      display: block;
+      @include animation-name (slideUp);
+      @include animation-duration (0.8s);
+      @include animation-fill-mode (both);
+    }
+  }
+}
+
+@include keyframes (slideInDown) {
+  0% {
+    @include translateY(-100%);
+  }
+  100% {
+    @include translateY(0);
+  }
+}
+
+@include keyframes (slideUp) {
+  0% {
+    @include translateY(100%);
+
+  }
+  100% {
+    @include translateY(0);
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  @include transition-duration(0.5s);
+}
+
+

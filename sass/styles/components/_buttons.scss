@@ -1,0 +1,23 @@
+.btn {
+  font-family: 'Raleway', "Arial", sans-serif;
+  background-color: $buttonColor;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $textColorLight;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  font-size: $fontSizeButton;
+  &:hover {
+    background-color: $buttonHover;
+  }
+}
+
+.btn-standart {
+  padding-right: 3.125rem;
+  padding-left: 3.125rem;
+}
+
+.download-button {
+  padding-right: 5.1rem;
+  padding-left: 5.1rem;
+}

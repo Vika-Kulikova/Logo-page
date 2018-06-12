@@ -1,0 +1,55 @@
+.navbar-content {
+  min-height: 100px;
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  a {
+    color: $textColorLight;
+    text-transform: uppercase;
+  }
+  &-logo {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 2.25rem;
+  }
+}
+
+.navbar-content-menu {
+  //height: 100vh;
+  //background-color: #000;
+  //opacity: 0.95;
+  .nav-item {
+    padding-left: 1.875rem;
+    &:hover {
+      a {
+        color: $textColorLight;
+      }
+    }
+  }
+  a {
+    color: $textColorNav;
+    @include transition-duration(0.3s);
+  }
+}
+
+.nav-item-active {
+  a {
+    color: $textColorLight;
+  }
+}
+
+hr {
+  border-color: $textColorLight;
+  opacity: 0.15;
+  margin: 0;
+}
+
+.toggle-hamburger.is-active + .navbar-content-menu {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: -100px;
+
+a {
+  font-size: 1.125rem;
+}
+}

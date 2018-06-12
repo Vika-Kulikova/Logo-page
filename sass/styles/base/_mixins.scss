@@ -1,0 +1,11 @@
+.image-param {
+  @include background-size(cover);
+  background-position: center;
+}
+
+.box-centered {
+  //min-height: 100vh;
+  //@include align-items(center);
+  //padding-bottom: $marginBotContentItem;
+  //padding-top: $marginBotContentItem;
+}

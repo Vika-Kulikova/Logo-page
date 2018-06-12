@@ -1,0 +1,40 @@
+.container-footer {
+  background-color: $backgroundFooter;
+}
+
+.content-footer {
+  min-height: 250px;
+  color: $textColorLight;
+  &-item {
+    margin-top: $marginBtn;
+  }
+  h5 {
+    font-weight: 700;
+    font-size: $baseFontSize;
+    margin-bottom: 1.125rem;
+  }
+  p {
+    color: $textColorLight;
+    opacity: 0.4;
+  }
+}
+
+.footer-copyright {
+  background-color: $backgroundFooterDarker;
+  min-height: 95px;
+}
+
+.container-copyright {
+  p {
+    font-family: 'PT Sans', sans-serif;
+    color: $textColorCopyright;
+    margin: 0;
+    line-height: 1.4rem;
+    span {
+      color: $textColorLight;
+    }
+    i {
+      color: $buttonColor;
+    }
+  }
+}

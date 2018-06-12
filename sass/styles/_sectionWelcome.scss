@@ -1,0 +1,33 @@
+.container-welcome {
+  min-height: 100vh;
+  color: $textColorLight;
+max-width: 950px;
+  h1 {
+    font-family: 'Open Sans', "Arial", sans-serif;
+    font-size: 4.0625rem;
+    line-height: 4.4375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 100px;
+    @media (max-width: 768px) {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+    @media (max-width: 500px) {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+  }
+  p {
+    font-size: 1.375rem;
+    line-height: 2.0625rem;
+    margin-bottom: 76px;
+    @media (max-width: 500px) {
+      font-size: 1rem;
+      line-height: 1.3125rem;
+    }
+  }
+  .btn {
+    margin-bottom: $marginBtn;
+  }
+}

@@ -1,0 +1,29 @@
+.header {
+  background-image: image-url("bg-header.jpg");
+  @extend .image-param;
+  min-height: 100vh;
+  &-navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0.95;
+    position: relative;
+    //position: absolute;
+    @include transition-timing-function(ease);
+    @include transition-duration(0.3s);
+    left: 0;
+    right: 0;
+    //padding-top: 40px;
+    &-fixed {
+      position: fixed;
+      left: 0;
+      right: 0;
+      background-color: #2B2D49;
+      z-index: 3;
+      //padding-top: 0;
+      .navbar-content {
+        min-height: 80px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,47 @@
+@import "compass/css3";
+
+@import "../node_modules/normalize.scss/normalize.scss";
+@import "../node_modules/font-awesome/scss/font-awesome";
+//@import "compass/typography/links";
+//@import "compass/utilities";
+//@import "breakpoint";
+
+@import "styles/base/variables";
+@import "styles/base/base";
+@import "styles/base/mixins";
+
+
+@import "styles/components/buttonHamburger";
+@import "styles/components/buttons";
+@import "styles/components/card";
+
+
+@import "styles/header";
+@import "styles/navMenu";
+@import "styles/sectionWelcome";
+@import "styles/sectionServises";
+@import "styles/sectionWork";
+@import "styles/sectionOurTeam";
+@import "styles/sectionCarousel";
+@import "styles/sectionDownload";
+@import "styles/footer";
+
+
+
+
+
+
+
+
+
+
+//@import "../node_modules/font-awesome/scss/font-awesome";
+
+
+//@import "styles/buttons";
+//@import "styles/header";
+//@import "styles/sectionWelcome";
+//@import "styles/sectionNews";
+//@import "styles/sectionNewsLetter";
+//@import "styles/sectionProduct";
+//@import "styles/footer";

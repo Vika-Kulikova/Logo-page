@@ -1,0 +1,14 @@
+.container-download {
+  min-height: 340px;
+  line-height: 1.3125rem;
+  color: $textColorDarker;
+  h5 {
+    font-weight: 300;
+    font-size: 1.75rem;
+  }
+  p {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: $marginBtn;
+  }
+}
